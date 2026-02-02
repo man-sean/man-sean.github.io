@@ -1,0 +1,30 @@
+---
+layout: post
+title: "ELAD: Blind Face Restoration using Expectation-based Likelihood Approximation and Diffusion Prior"
+authors: "Sean Man, Guy Ohayon, Ron Raphaeli, Matan Kleiner, Michael Elad"
+venue: "SIGGRAPH Asia, 2025"
+date: 2025-12-01
+categories: [research]
+image: "/images/elad.png"
+arxiv: "https://arxiv.org/abs/2501.12102"
+acm: "https://dl.acm.org/doi/full/10.1145/3757377.3763969"
+website: "https://man-sean.github.io/elad-website/"
+bibtex: |
+  @inproceedings{10.1145/3757377.3763969,
+  author = {Man, Sean and Ohayon, Guy and Raphaeli, Ron and Kleiner, Matan and Elad, Michael},
+  title = {ELAD: Blind Face Restoration using Expectation-based Likelihood Approximation and Diffusion Prior},
+  year = {2025},
+  isbn = {9798400721373},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3757377.3763969},
+  doi = {10.1145/3757377.3763969},
+  booktitle = {Proceedings of the SIGGRAPH Asia 2025 Conference Papers},
+  articleno = {63},
+  numpages = {12},
+  keywords = {Blind Face Restoration, Image Restoration, Plug and Play, Diffusion Prior, Posterior Sampling},
+  location = {},
+  series = {SA Conference Papers '25}
+  }
+---
+We propose a novel approach to blind face restoration using a degradation estimator, expectation-based likelihood approximation, and diffusion prior.

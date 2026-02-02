@@ -1,0 +1,24 @@
+---
+layout: post
+title: "SILO: Solving inverse problems with latent operators"
+authors: "Ron Raphaeli, Sean Man, Michael Elad"
+venue: "ICCV, 2025"
+date: 2025-10-01
+categories: [research]
+image: "/images/silo.png"
+arxiv: "http://arxiv.org/abs/2501.11746"
+cvf: "https://openaccess.thecvf.com/content/ICCV2025/html/Raphaeli_SILO_Solving_Inverse_Problems_with_Latent_Operators_ICCV_2025_paper.html"
+code: "https://github.com/ronraphaeli/SILO"
+talk: "https://www.youtube.com/live/2fEDy-uTAII?si=PY_Wlma_0dkIkRPv&t=19710"
+website: "https://ronraphaeli.github.io/SILO-website/"
+bibtex: |
+  @InProceedings{Raphaeli_2025_ICCV,
+      author    = {Raphaeli, Ron and Man, Sean and Elad, Michael},
+      title     = {SILO: Solving Inverse Problems with Latent Operators},
+      booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+      month     = {October},
+      year      = {2025},
+      pages     = {10570-10580}
+  }
+---
+We propose a novel approach to solving inverse problems with latent diffusion models by training an extremely small latent operator to mimic the degradation operator.

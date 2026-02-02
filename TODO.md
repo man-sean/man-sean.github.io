@@ -10,10 +10,10 @@
 - [x] Update contact links (Email, GitHub, Google Scholar, LinkedIn) in `_layouts/default.html`.
 - [x] Swap the profile image: `images/circle_crop.jpg` (and update its `alt` text).
 - [ ] Update `url` and `baseurl` in `_config.yml`.
-- [ ] Remove/replace the most visible posts in `_posts/` that appear on the homepage.
+- [x] Remove/replace the most visible posts in `_posts/` that appear on the homepage.
 
 ## Phase 2: Full Personalization (recommended)
-- [ ] Replace all remaining posts in `_posts/` with your own entries.
+- [x] Replace all remaining posts in `_posts/` with your own entries.
 - [ ] Curate `images/`, `pdfs/`, and `tn/` so only your assets remain.
 - [x] Update favicon via `_make_favicon.sh` if desired.
 - [ ] Review styles in `style.scss` and `_sass/` for branding changes.
