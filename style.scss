@@ -74,6 +74,44 @@ h1 {
 
 }
 
+@media (max-width: 768px) {
+  table {
+    max-width: 100% !important;
+  }
+
+  .hero-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bio-cell,
+  .photo-cell {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .photo-cell {
+    order: 1;
+    text-align: center;
+    padding-top: 4% !important;
+    padding-bottom: 2% !important;
+  }
+
+  .bio-cell {
+    order: 2;
+    padding-top: 0 !important;
+  }
+
+  .photo-cell img {
+    width: 65% !important;
+    max-width: 250px !important;
+    height: auto;
+  }
+}
+
 .one {
   width: 160px;
   height: 160px;
