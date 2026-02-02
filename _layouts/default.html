@@ -84,6 +84,10 @@
 
               <br>
               <em>{{post.venue}}</em>
+              {% if post.award %}
+              <br>
+              {{ post.award }}
+              {% endif %}
               <br>
               {% assign links = "" | split: "" %}
               {% if post.arxiv %}{% capture link %}<a href="{{ post.arxiv }}" target="_blank" rel="noopener">arxiv</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
@@ -128,13 +132,14 @@
     .bibtex-copy {
       background: none;
       border: 0;
-      color: #1772d0;
+      color: #576a8f;
       cursor: pointer;
       font: inherit;
       padding: 0;
       text-decoration: none;
     }
     .bibtex-copy:hover {
+      color: #ff7444;
       text-decoration: underline;
     }
     .author-me {
