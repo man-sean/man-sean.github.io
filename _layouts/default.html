@@ -86,16 +86,16 @@
               <em>{{post.venue}}</em>
               <br>
               {% assign links = "" | split: "" %}
-              {% if post.arxiv %}{% assign links = links | push: "<a href='#{post.arxiv}'>arxiv</a>" %}{% endif %}
-              {% if post.cvf %}{% assign links = links | push: "<a href='#{post.cvf}'>cvf</a>" %}{% endif %}
-              {% if post.acm %}{% assign links = links | push: "<a href='#{post.acm}'>acm</a>" %}{% endif %}
-              {% if post.video %}{% assign links = links | push: "<a href='#{post.video}'>video</a>" %}{% endif %}
-              {% if post.talk %}{% assign links = links | push: "<a href='#{post.talk}'>talk</a>" %}{% endif %}
-              {% if post.code %}{% assign links = links | push: "<a href='#{post.code}'>code</a>" %}{% endif %}
-              {% if post.poster %}{% assign links = links | push: "<a href='#{post.poster}'>poster</a>" %}{% endif %}
-              {% if post.slides %}{% assign links = links | push: "<a href='#{post.slides}'>slides</a>" %}{% endif %}
-              {% if post.website %}{% assign links = links | push: "<a href='#{post.website}'>website</a>" %}{% endif %}
-              {% if post.youtube %}{% assign links = links | push: "<a href='#{post.youtube}'>youtube</a>" %}{% endif %}
+              {% if post.arxiv %}{% capture link %}<a href="{{ post.arxiv }}" target="_blank" rel="noopener">arxiv</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+              {% if post.cvf %}{% capture link %}<a href="{{ post.cvf }}" target="_blank" rel="noopener">cvf</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+              {% if post.acm %}{% capture link %}<a href="{{ post.acm }}" target="_blank" rel="noopener">acm</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+              {% if post.video %}{% capture link %}<a href="{{ post.video }}" target="_blank" rel="noopener">video</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+              {% if post.talk %}{% capture link %}<a href="{{ post.talk }}" target="_blank" rel="noopener">talk</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+              {% if post.code %}{% capture link %}<a href="{{ post.code }}" target="_blank" rel="noopener">code</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+              {% if post.poster %}{% capture link %}<a href="{{ post.poster }}" target="_blank" rel="noopener">poster</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+              {% if post.slides %}{% capture link %}<a href="{{ post.slides }}" target="_blank" rel="noopener">slides</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+              {% if post.website %}{% capture link %}<a href="{{ post.website }}" target="_blank" rel="noopener">website</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
+              {% if post.youtube %}{% capture link %}<a href="{{ post.youtube }}" target="_blank" rel="noopener">youtube</a>{% endcapture %}{% assign links = links | push: link %}{% endif %}
               {% assign link_sep = " • " %}
               {{ links | join: link_sep }}
               {% if post.bibtex %}
