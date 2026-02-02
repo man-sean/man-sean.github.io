@@ -20,6 +20,36 @@ bundle exec jekyll serve
 
 Then visit `http://127.0.0.1:4000`.
 
+## Writing a New Post
+Create a file in `_posts/` named `YYYY-MM-DD-title.markdown`, for example:
+```
+_posts/2026-02-02-my-new-project.markdown
+```
+
+Minimum front matter example:
+```
+---
+layout: post
+title: "My New Project"
+categories: [research]   # used by the homepage sections
+image: "/images/my-project.png"
+authors: "Sean Man, Collaborator"
+venue: "Conference/Workshop"
+date: 2026-02-02
+---
+```
+
+Optional fields used by the homepage:
+```
+excerpt: "1–2 sentence summary."
+arxiv: "https://arxiv.org/abs/..."
+code: "https://github.com/..."
+video: "https://..."
+poster: "/pdfs/my-poster.pdf"
+slides: "/pdfs/my-slides.pdf"
+website: "https://..."
+```
+
 ## Project Quirks & Notes
 - Posts use `permalink: /` to avoid dedicated post pages. This creates multiple entries in `sitemap.xml` pointing to `index.html`.
 - If you want multi-paragraph excerpts, set `excerpt_separator: <!--more-->` in `_config.yml`.
