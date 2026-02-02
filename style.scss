@@ -75,13 +75,9 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  table {
-    max-width: 100% !important;
-  }
-
   .hero-row {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    direction: ltr;
   }
 
   .bio-cell,
@@ -94,14 +90,12 @@ h1 {
   }
 
   .photo-cell {
-    order: 1;
     text-align: center;
     padding-top: 4% !important;
     padding-bottom: 2% !important;
   }
 
   .bio-cell {
-    order: 2;
     padding-top: 0 !important;
   }
 
