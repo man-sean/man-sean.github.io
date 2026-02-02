@@ -1,14 +1,36 @@
-# updated website
+# Personal Academic Website (Jekyll)
 
-This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+## Origin
+- The visual design is inspired by Jon Barron’s academic webpage.
+- Leonid Keselman adapted that style into a Jekyll-based template, which this repo builds on.
+- This repository is a customized fork for my own content and layout needs.
 
-The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use, re-purposing my old markdown posts. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
+## Local Setup
+Prerequisites:
 
+- Ruby installed (Homebrew Ruby is recommended for macOS): `/opt/homebrew/opt/ruby/bin`
+- Bundler available (`gem install bundler` if needed)
 
+Install dependencies and run locally:
 
-## issues
-* In general, jekyll will try to build a full page for every post. I skip that by forcing `permalink: /`. This creates multiple entries in sitemap.xml for index.html but is otherwise fine. 
-* If you want multiple paragraphs, consider using `excerpt_separator: <!--more-->` in `_config.yml`, for my own use I didn't need this. 
-* My own posts have lots of extra stuff left over from my old jekyll design ("author", long descriptions, etc.), feel free to ignore them
-* I use thumbnails, so I can upload arbitrary sized images but then only display small ones. The `_make_thumbnails.sh` script generates them and the html template looks in `tn/` for all images. 
-* I have three categories of post with slightly differerent formatting, so changing sizing requires edits in multiple paces. 
+```
+bundle install
+bundle exec jekyll serve
+```
+
+Then visit `http://127.0.0.1:4000`.
+
+## Project Quirks & Notes
+- Posts use `permalink: /` to avoid dedicated post pages. This creates multiple entries in `sitemap.xml` pointing to `index.html`.
+- If you want multi-paragraph excerpts, set `excerpt_separator: <!--more-->` in `_config.yml`.
+- Thumbnails are generated with `_make_thumbnails.sh` and stored in `tn/`.
+- Some posts contain legacy front matter fields (e.g., `author`, long descriptions). They can be ignored or cleaned up as needed.
+
+## Deployment to GitHub Pages
+- Ensure `baseurl` and `url` in `_config.yml` match your GitHub Pages settings.
+- Commit and push to the default branch used by Pages (commonly `main` or `master`).
+- For user/organization sites, the site is served from the root; for project sites, it is served under `/<repo-name>/`.
+- GitHub Pages builds automatically on push; no local build output should be committed.
+
+## Content and Licensing
+- Please respect copyright for materials under `images/`, `pdfs/`, and `_posts/`.
