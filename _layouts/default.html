@@ -78,7 +78,7 @@
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
+              <h3>{{post.title}}{% if post.award %} 🏅{% endif %}</h3>
               <br>
               {{ post.authors | replace: "Sean Man", "<span class='author-me'>Sean Man</span>" }}
 

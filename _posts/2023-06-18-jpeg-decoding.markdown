@@ -8,6 +8,7 @@ categories: [research]
 image: "/images/jpeg_decoding.png"
 arxiv: "https://arxiv.org/abs/2211.11827"
 cvf: "https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Man_High-Perceptual_Quality_JPEG_Decoding_via_Posterior_Sampling_CVPRW_2023_paper.html"
+award: "Sony Best Paper Award"
 bibtex: |
   @InProceedings{Man_2023_CVPR,
       author    = {Man, Sean and Ohayon, Guy and Adrai, Theo and Elad, Michael},
