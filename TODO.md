@@ -6,16 +6,16 @@
 - [x] Bundler-based setup is in place for local dev (see `README.md`).
 
 ## Phase 1: Minimal Launch (fast cleanup to go live)
-- [ ] Replace the main bio paragraph(s) in `_layouts/default.html`.
-- [ ] Update contact links (Email, GitHub, Google Scholar, LinkedIn) in `_layouts/default.html`.
-- [ ] Swap the profile image: `images/circle_bw_crop.jpg` (and update its `alt` text).
+- [x] Replace the main bio paragraph(s) in `_layouts/default.html`.
+- [x] Update contact links (Email, GitHub, Google Scholar, LinkedIn) in `_layouts/default.html`.
+- [x] Swap the profile image: `images/circle_crop.jpg` (and update its `alt` text).
 - [ ] Update `url` and `baseurl` in `_config.yml`.
 - [ ] Remove/replace the most visible posts in `_posts/` that appear on the homepage.
 
 ## Phase 2: Full Personalization (recommended)
 - [ ] Replace all remaining posts in `_posts/` with your own entries.
 - [ ] Curate `images/`, `pdfs/`, and `tn/` so only your assets remain.
-- [ ] Update favicon via `_make_favicon.sh` if desired.
+- [x] Update favicon via `_make_favicon.sh` if desired.
 - [ ] Review styles in `style.scss` and `_sass/` for branding changes.
 
 ## Phase 3: Polish & Maintenance
