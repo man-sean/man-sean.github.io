@@ -96,9 +96,10 @@
               {% if post.slides %}{% assign links = links | push: "<a href='#{post.slides}'>slides</a>" %}{% endif %}
               {% if post.website %}{% assign links = links | push: "<a href='#{post.website}'>website</a>" %}{% endif %}
               {% if post.youtube %}{% assign links = links | push: "<a href='#{post.youtube}'>youtube</a>" %}{% endif %}
-              {{ links | join: " / " }}
+              {% assign link_sep = " • " %}
+              {{ links | join: link_sep }}
               {% if post.bibtex %}
-              {% if links.size > 0 %} / {% endif %}
+              {% if links.size > 0 %}{{ link_sep }}{% endif %}
               <button class="bibtex-copy" type="button" data-bibtex="{{ post.bibtex | escape }}" data-default-label="bibtex">bibtex</button>
               {% endif %}
               <p></p>
