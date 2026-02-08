@@ -12,9 +12,38 @@
 /**************/
 /* BASE RULES */
 /**************/
+:root {
+  --ctp-rosewater: #dc8a78;
+  --ctp-flamingo: #dd7878;
+  --ctp-pink: #ea76cb;
+  --ctp-mauve: #8839ef;
+  --ctp-red: #d20f39;
+  --ctp-maroon: #e64553;
+  --ctp-peach: #fe640b;
+  --ctp-yellow: #df8e1d;
+  --ctp-green: #40a02b;
+  --ctp-teal: #179299;
+  --ctp-sky: #04a5e5;
+  --ctp-sapphire: #209fb5;
+  --ctp-blue: #1e66f5;
+  --ctp-lavender: #7287fd;
+  --ctp-text: #4c4f69;
+  --ctp-subtext1: #5c5f77;
+  --ctp-subtext0: #6c6f85;
+  --ctp-overlay2: #7c7f93;
+  --ctp-overlay1: #8c8fa1;
+  --ctp-overlay0: #9ca0b0;
+  --ctp-surface2: #acb0be;
+  --ctp-surface1: #bcc0cc;
+  --ctp-surface0: #ccd0da;
+  --ctp-base: #eff1f5;
+  --ctp-mantle: #e6e9ef;
+  --ctp-crust: #dce0e8;
+}
+
 body {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--ctp-base);
+  color: var(--ctp-text);
   position: relative;
   z-index: 0;
 }
@@ -26,18 +55,18 @@ body::before {
   background-image: url("/icons/pattern.png");
   background-repeat: repeat;
   background-size: 80px;
-  opacity: 0.35;
+  opacity: 0.2;
   z-index: -1;
 }
 
 a {
-  color: #576a8f;
+  color: var(--ctp-blue);
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #ff7444;
+  color: var(--ctp-mauve);
   text-decoration: none;
 }
 
@@ -96,20 +125,20 @@ h1 {
 }
 
 h1 {
-  color: #000000;
+  color: var(--ctp-text);
   text-shadow: none;
 }
 
 h2 {
-  color: #000000;
+  color: var(--ctp-subtext1);
 }
 
 h3 {
-  color: #000000;
+  color: var(--ctp-text);
 }
 
 .author-me {
-  color: #ff7444 !important;
+  color: var(--ctp-maroon) !important;
   font-weight: 700 !important;
 }
 
@@ -176,7 +205,8 @@ h3 {
 }
 
 span.highlight {
-  background-color: #ffffd0;
+  background-color: var(--ctp-yellow);
+  color: var(--ctp-crust);
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
