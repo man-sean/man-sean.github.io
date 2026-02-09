@@ -211,6 +211,42 @@ h3 {
     max-width: 250px !important;
     height: auto;
   }
+
+  .paper-row {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .paper-media,
+  .paper-content {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .paper-media {
+    text-align: center;
+    padding-bottom: 0.2rem !important;
+  }
+
+  .paper-media img {
+    width: 75% !important;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .paper-content {
+    width: 85% !important;
+    max-width: 85% !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0 !important;
+    vertical-align: top !important;
+  }
 }
 
 .one {
