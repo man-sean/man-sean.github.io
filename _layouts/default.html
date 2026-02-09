@@ -16,7 +16,7 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
   <meta name="author" content="{{ site.name }}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -128,12 +128,13 @@
       padding: 0;
       text-decoration: none;
     }
-    .bibtex-copy:hover {
+    .bibtex-copy:hover,
+    .bibtex-copy:focus {
       color: var(--ctp-mauve);
-      text-decoration: underline;
+      text-decoration: none;
     }
     .author-me {
-      color: #0b4f9e;
+      color: var(--ctp-maroon);
       font-weight: 700;
     }
   </style>
