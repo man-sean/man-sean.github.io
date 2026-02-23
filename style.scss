@@ -156,6 +156,10 @@ h3 {
   font-weight: 700 !important;
 }
 
+.paper-media img {
+  filter: drop-shadow(0 0 8px rgba(76, 79, 105, 0.18));
+}
+
 @media (max-width: 768px) {
   table {
     width: 100% !important;

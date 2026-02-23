@@ -1,0 +1,18 @@
+---
+layout: post
+title: "DODO: Discrete OCR Diffusion Models"
+authors: "Sean Man, Roy Ganz, Roi Ronen, Shahar Tsiper, Shai Mazor, Niv Nayman"
+venue: "arXiv, 2026"
+date: 2026-02-18
+categories: [research]
+image: "/images/dodo.jpg"
+arxiv: "https://arxiv.org/abs/2602.16872"
+bibtex: |
+  @article{man2026dodo,
+    title={DODO: Discrete OCR Diffusion Models},
+    author={Man, Sean and Ganz, Roy and Ronen, Roi and Tsiper, Shahar and Mazor, Shai and Nayman, Niv},
+    journal={arXiv preprint arXiv:2602.16872},
+    year={2026}
+  }
+---
+The first VLM to use block discrete diffusion, enabling parallel block-wise decoding OCR that matches strong autoregressive baselines while delivering substantial throughput gains.
