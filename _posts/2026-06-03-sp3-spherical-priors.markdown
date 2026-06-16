@@ -2,7 +2,7 @@
 layout: post
 title: "SP<sup>3</sup>: Spherical Priors for Plug-and-Play Restoration"
 authors: "Sean Man, Ron Raphaeli, Matan Kleiner, Or Ronai"
-venue: "Upcoming, 2026"
+venue: "arXiv, 2026"
 date: 2026-06-03
 categories: [research]
 image: "/images/sp3-spherical-priors.jpg"
